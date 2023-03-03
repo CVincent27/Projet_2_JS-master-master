@@ -1,0 +1,122 @@
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+    background-color: #E5E5E5;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 65px 0
+}
+
+h1{
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+.font-weight{
+    font-weight: 600;
+}
+
+/* Partie log in */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_form{
+    width: 30%;
+}
+
+h2 {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 30px;
+    color: #1D6154;
+}
+
+h3 {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 14px;
+    color: #1D6154;
+    margin-bottom: 8px;
+}
+input{
+    border: none;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    ;
+}
+
+button{
+    width: 15%;
+    height: 40px;
+    margin: 24px;
+    background-color: #1D6154;
+    border: none;
+    font-family: 'Syne';
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 60px;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+    text-decoration-line: underline;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+h5{
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+
+
+}
