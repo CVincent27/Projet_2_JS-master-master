@@ -1,74 +1,76 @@
-
 alert("Hello")
 
-// test gallery
-// async function getWorks(){
+//* Appel à l'api *
+async function getWorks(){
+    const res = await fetch("http://localhost:5678/api/works");
+    const data = await res.json();
+    return data;
+   }
+   
+//    Construction de la gallery 
+// Test avec tahina 
 
-// async function createGallery(){
-//     const works = await getWorks();
-//     const gallery = document.querySelector(".gallery");
-
-//     let categories = [];
-//         works.forEach(work=> {
-//         const element = document.createElement("figure");
-//         const imgElement = document.createElement("img");
-//         const captionElement = document.createElement("figcaption");
-//         captionElement.innerText = work.title;
-//         imgElement.src = work.imageUrl;
-//         element.dataset.category = work.category.name;
-//         element.appendChild(imgElement);
-//         element.appendChild(captionElement);      
-//         gallery.appendChild(element);
-
-//         categories.push(work.category.name);
-//     });
-
-//     categories.unshift('Tous');
-//     const cleanCategories = new Set(categories);
-
-//     cleanCategories.forEach(category=> {
-
-//         const buttonElement = document.createElement("button");
-//         buttonElement.innerText = category;
-//         buttonElement.dataset.category = category;
-//         if(category === 'Tous'){
-//             buttonElement.classList.add("activefilter");
-//         }
-//         document.querySelector(".filtersdiv").appendChild(buttonElement);
-
-//         buttonElement.addEventListener("click", function(e) {
-//             e.preventDefault();
-//             console.log(buttonElement.dataset.category);
-//             const filters = document.querySelector(".filtersdiv");
-//             const filtersArray = Array.from(filters.children);
-//             filtersArray.forEach(buttonElement=> {
-//                 buttonElement.classList.remove("activefilter");
-//             }); 
-//             buttonElement.classList.add("activefilter");
-
-//             let figure = document.querySelectorAll('.gallery figure');
-//             figure.forEach(figurework=> {
-//                 if(buttonElement.dataset.category === 'Tous') {
-//                     figurework.classList.remove("no-show"); 
-//                 }
-//                 else if(figurework.dataset.category === buttonElement.dataset.category) {
-//                     figurework.classList.remove("no-show"); 
-//                 }
-//                 else {
-//                     figurework.classList.add("no-show");
-//                 }
-//         });
-//     });
-// });
-
-//     createGallery();
-
-
-
-
-
-
-
+   const tahinaElement = document.createElement("figure");
+   tahinaElement.classList.add("figtahina");
+   async function createGallery(){
+       const works = await getWorks();
+       console.log(works);
+       const gallery = document.querySelector(".gallery");
+   
+       let categories = [];
+   
+   const parisvElement = document.createElement("figure");
+   parisvElement.classList.add("figparisv");
+       works.forEach(work=> {
+           const element = document.createElement("figure");
+           const imgElement = document.createElement("img");
+           const captionElement = document.createElement("figcaption");
+           captionElement.innerText = work.title;
+           imgElement.src = work.imageUrl;
+           element.dataset.category = work.category.name;
+           element.appendChild(imgElement);
+           element.appendChild(captionElement);      
+           gallery.appendChild(element);
+   
+   const sushisenElement = document.createElement("figure");
+   sushisenElement.classList.add("figsushisen");
+           categories.push(work.category.name);
+       });
+   
+   const balisiereElement = document.createElement("figure");
+   balisiereElement.classList.add("figbalisiere");
+       console.log(categories);
+       const cleanCategories = new Set(categories);
+       console.log(cleanCategories);
+   
+   const thermopolisElement = document.createElement("figure");
+   thermopolisElement.classList.add("figthermopolis");
+       cleanCategories.forEach(category=> {
+           console.log(category);
+           buttonFilters.addEventListener("click", function () {
+   
+   const parisxElement = document.createElement("figure");
+   parisxElement.classList.add("figparisxElement");
+           })
+           
+   
+    const coteauElement = document.createElement("figure");
+    coteauElement.classList.add("figcoteau");
+    
+    const fernezeElement = document.createElement("figure");
+    fernezeElement.classList.add("figferneze");
+        });
+    
+    const parisxviiiElement = document.createElement("figure");
+    parisxviiiElement.classList.add("figparisxviii");
+        
+    const lullabyElement = document.createElement("figure");
+    lullabyElement.classList.add("figlullaby");
+    
+    const arteElement = document.createElement("figure");
+    arteElement.classList.add("figarte");
+    }
+   createGallery();
 
 
 
