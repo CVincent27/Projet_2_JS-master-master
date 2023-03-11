@@ -1,5 +1,3 @@
-alert("Hello")
-
 const formElement = document.querySelector('.form');
 
 formElement.addEventListener('submit', (e) => {
@@ -20,41 +18,3 @@ formElement.addEventListener('submit', (e) => {
       .catch(error => console.log(error));
 
 });
-
-// // https://youtu.be/z9pcgJX1DdY?t=572
-
-
-
-
-
-
-
-
-
-    
-
-     
-// 2eme test
-// async function getUsers(names) {
-//     let jobs = [];
-  
-//     for(let name of names) {
-//       let job = fetch(`http://localhost:5678/api/users/login`).then(
-//         successResponse => {
-//           if (successResponse.status != 200) {
-//             return null;
-//           } else {
-//             return successResponse.json();
-//           }
-//         },
-//         failResponse => {
-//           return null;
-//         }
-//       );
-//       jobs.push(job);
-//     }
-  
-//     let results = await Promise.all(jobs);
-  
-//     return results;
-//   }

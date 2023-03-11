@@ -24,22 +24,27 @@
         </nav>
     </header>
     <main>
-        <section class="login">
-        <h2>Log in</h2>
-            <div class="login_form">
-                <h3>E-mail</h3>
-                <input type="text" placeholder="">
-
-                <h3>Mot de passe</h3>
-                <input type="text" placeholder="">
-            </div>
-            <button>Se connecter</button>
-            <a href="#">Mot de passe oublié</a>
+        <section id="contact" class="login">
+            <h2>Log in</h2>
+            <form class="form">
+                <label for="email" class="labelemail">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="password" class="labelmdp">Mot de passe</label>
+                <input type="password" name="password" id="password">
+                <div class="display_box">
+                <button type="submit">Se connecter</button>
+                <a href="#" class="mdpoublie">Mot de passe oublié</a>
+                </div>
+            </form>
         </section>
     </main>
 </body>
 <footer>
-    <h5>Mentions légales</h5>
+    <nav>
+		<ul>
+			<li class="footerlogin">Mentions Légales</li>
+		</ul>
+	</nav>
 </footer>
 <script src="login.js"></script>
 </html>
